@@ -1,0 +1,9 @@
+.input-div{
+  display: flex;
+  justify-content: center;
+}
+
+.intern-div input{
+  border-radius: 5px;
+  height: 20px;
+}
