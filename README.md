@@ -10,6 +10,7 @@ Onde está tudo comentado e implementado.
 ### Limitações
 
 - ✅ Sintaxe de Classe Em React.
+- ✅ stateFull Component.
 - ❌ Suporte a React Hooks (Ainda não implementado).
 - ❌ Suporte a Angular.
 - ❌ Suporte a VueJS.
