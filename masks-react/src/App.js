@@ -6,25 +6,18 @@ import { phoneMask } from './Components/phoneMask'
 import './App.css';
 
 class App extends Component{
-  constructor(props){
-    super(props)
-
-    this.state = {
+    state = {
       cpfValue: '', // Iniciando valor do estado do CPF.
       phoneValue: '', // Iniciando valor do estado do Telefone.
     }
 
-    this.setCpfValue = this.setCpfValue.bind(this) // Dando bind no this para valor não variar.
-    this.setPhoneValue = this.setPhoneValue.bind(this) // Dando bind no this para valor não variar.
-  }
-
-  setCpfValue(event){ 
+  setCpfValue = event =>{ 
     this.setState({
       cpfValue: cpfMask(event.target.value) // Estado do CPF recebe o valor modificado do CPF Mask.
     })
   }
 
-  setPhoneValue(event){
+  setPhoneValue = event => {
     this.setState({
       phoneValue: phoneMask(event.target.value) //Estado do TELEFONE recebe o valor modificado do Phone Mask.
     })
