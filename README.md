@@ -5,8 +5,7 @@ Mascaras de CPF e Número de Telefone no ReactJs 👺👹
 Basicamente, as mascaras de CPF e Telefone, elas deixam o input mais bonito.  
 Importando elas np seu projeto, é só seguir a implementação no ` App.js `  
 Onde está tudo comentado e implementado.
-![kuN6wwM](https://user-images.githubusercontent.com/49910898/76009369-df9ca080-5eef-11ea-8b26-8727ea836562.gif)
-
+![bfeXU1H](https://user-images.githubusercontent.com/49910898/76009810-96008580-5ef0-11ea-9d2a-a9d5a19ef292.png)
 ### Limitações
 
 - ✅ Sintaxe de Classe Em React.
