@@ -27,7 +27,7 @@ export default function App(){
     return (
       <div className='input-div'>
         <div className='intern-div'>
-          <h1>CPF & Phone Masks</h1>
+          <h1>React Masks</h1>
           <h3>CPF:</h3>
           <input type='text' maxLength='14' name='cpf' value={cpf} onChange={e => setCpfValue(e.target.value)}/>
           <h3>Telefone:</h3>
