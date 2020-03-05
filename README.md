@@ -11,6 +11,6 @@ Onde está tudo comentado e implementado.
 
 - ✅ Sintaxe de Classe Em React.
 - ✅ stateFull Component.
-- ❌ Suporte a React Hooks (Ainda não implementado).
+- ✅Suporte a React Hooks.
 - ❌ Suporte a Angular.
 - ❌ Suporte a VueJS.
