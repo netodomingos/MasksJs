@@ -1,45 +1,32 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import { cpfMask } from './Components/cpfMask'
 import { phoneMask } from './Components/phoneMask'
 
 import './App.css';
 
-class App extends Component{
-    state = {
-      cpfValue: '', // Iniciando valor do estado do CPF.
-      phoneValue: '', // Iniciando valor do estado do Telefone.
-    }
+export default function App(){
 
-  setCpfValue = event =>{ 
-    this.setState({
-      cpfValue: cpfMask(event.target.value) // Estado do CPF recebe o valor modificado do CPF Mask.
-    })
+  const [ cpf, setCpf ] = useState('')
+  const [ phoneNumber, setPhoneNumer ] = useState('')
+
+  const setCpfValue = event =>{ 
+    setCpf(cpfMask(event))
   }
 
-  setPhoneValue = event => {
-    this.setState({
-      phoneValue: phoneMask(event.target.value) //Estado do TELEFONE recebe o valor modificado do Phone Mask.
-    })
+  const setPhoneValue = event => {
+   setPhoneNumer(phoneMask(event))
   }
-
-
-  render(){
-
-    const { cpfValue, phoneValue } = this.state // Desestruturando os estados
 
     return (
       <div className='input-div'>
         <div className='intern-div'>
           <h1>CPF & Phone Masks</h1>
           <h3>CPF:</h3>
-          <input type='text' maxLength='14' name='cpf' value={cpfValue} onChange={this.setCpfValue}/>
+          <input type='text' maxLength='14' name='cpf' value={cpf} onChange={e => setCpfValue(e.target.value)}/>
           <h3>Telefone:</h3>
-          <input type='text' maxLength='15' name='telefone' value={phoneValue} onChange={this.setPhoneValue}/>
+          <input type='text' maxLength='15' name='telefone' value={phoneNumber} onChange={e => setPhoneValue(e.target.value)}/>
         </div>
       </div>
     );
   }
-}
-
-export default App;
