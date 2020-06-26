@@ -1,4 +1,4 @@
 export const cleanMask = value => {
     return value
-    .replace(/\D\d/g, '') //Substitui qualquer caracter que não seja numero ou letra por nada
+    .replace(/([^0-9a-zA-Z])/g, '') //Substitui qualquer caracter que não seja numero ou letra por nada
 }
